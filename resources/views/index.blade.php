@@ -11,10 +11,11 @@
         <li><a href="{{ url('about') }}">About</a></li>
         <li><a href="{{ url('contact') }}">Contact</a></li>
     </ul>  -->
+    <p>Xin chao {{ $data->username}}</p>
     <ul>
-        <li><a href="{{ route('page',['name'=>'home']) }}">Home</a></li>
-        <li><a href="{{ route('page',['name'=>'about']) }}">About</a></li>
-        <li><a href="{{ route('page',['name'=>'contact']) }}">Contact</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
     </ul>   
     <h1>This is index page</h1>
 </body>
