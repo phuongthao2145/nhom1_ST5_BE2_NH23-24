@@ -17,7 +17,8 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/', [WelcomeController::class,'index']);
+//Route::get('/', [WelcomeController::class,'index']);
 Route::get('/signup', [WelcomeController::class,'signup']);
 Route::post('process',[WelcomeController::class,'process_signup'])->name('signup');
-Route::resource('/product',ProductController::class);
+//Route::resource('/product',ProductController::class);
+Route::get('/{page?}',[WelcomeController::class,'page']);

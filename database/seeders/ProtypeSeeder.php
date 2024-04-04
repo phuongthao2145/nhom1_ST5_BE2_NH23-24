@@ -5,17 +5,20 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class ProtypeSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-       // \App\Models\User::factory(10)->create();
-        $this->call(ProductSeeder::class);
-        $this->call(ProtypeSeeder::class);
+        
+        DB::table('protypes')->insert([
+            ['name'=>'laptop'],
+            ['name'=>'speaker'],
+            ['name'=>'headphone'],
+        ]);
     }
 }
