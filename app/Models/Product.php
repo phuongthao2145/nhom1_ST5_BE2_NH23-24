@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+    public function protype(){
+        return $this->belongsTo(Protype::class,'type');
+    }
 }

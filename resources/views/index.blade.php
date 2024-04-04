@@ -96,7 +96,7 @@
 												</div>
 											</div>
 											<div class="product-body">
-												<p class="product-category">Category</p>
+												<p class="product-category">{{ $row->protype->name }}</p>
 												<h3 class="product-name"><a href="#">{{ $row->name }}</a></h3>
 												<h4 class="product-price">
 													{{ $row->price }}
